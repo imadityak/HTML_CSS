@@ -3,12 +3,16 @@
     background-color: rgb(220, 0, 0);
     color: white;
     border: none;
-    height: 35px;
-    width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     border-radius: 2px;
     cursor: pointer;
     margin-bottom: 10px;
     transition: opacity 0.15s;
+    /* align based on the tops of the elements */
+    vertical-align: top; 
   }
   .subscribe-button:hover {
     opacity: 0.7;
@@ -20,10 +24,12 @@
     background-color: white;
     border-color: rgb(91, 91, 255);
     border-style: solid;
-    border-width: 1.5px;
+    border-width: 1px;
     color: rgb(91, 91, 255);
-    height: 35px;
-    width: 62px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     border-radius: 2px;
     cursor: pointer;
     margin-left: 5px;
@@ -40,35 +46,58 @@
     background-color: rgb(91, 91, 255);
     color: white;
     border: none;
-    height: 35px;
-    width: 74px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     border-radius: 18px;
     margin-left: 5px;
     font-weight: bold;
     cursor: pointer;
-    transition: box-shadow 0.15s;
+    transition: box-shadow 0.15s, opacity 0.15s;
+    vertical-align: top;
   }
   .tweet-button:hover{
     box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
   }
+  .tweet-button:active{
+    opacity: 0.5;
+  }
   .amazon-button{
     background-color: rgb(255, 216, 20);
     border: none;
-    height: 30px;
-    width: 150px;
-    margin-left: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     border-radius: 20px;
     cursor: pointer;
+    vertical-align: top;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+  }
+  .amazon-button:active{
+    margin-top: 3px;
+    margin-left: 3px;
+    box-shadow: none;
   }
   .linkedin-button{
     background-color: rgb(10, 102, 194);
     border: none;
     color: white;
-    height: 30px;
-    width: 220px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     border-radius: 15px;
     font-weight: bold;
     cursor: pointer;
+    transition: padding 1s;
+  }
+  .linkedin-button:hover{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 </style>
 
@@ -87,8 +116,6 @@
 <button class="amazon-button">
   Add to cart
 </button>
-
-<br>
 
 <button class="linkedin-button">
   Apply on company website
