@@ -1,0 +1,60 @@
+a{
+  color:rgb(0, 113, 133);
+  transition: color 0.15s, opacity 0.15s;
+}
+a:hover{
+  color:rgb(255, 166, 0);
+}
+a:active{
+  opacity: 0.5;
+}
+.price{
+  color: rgb(0, 118, 0);
+  font-weight: bold;
+}
+.product-title{
+  font-weight: bold;
+  font-size: 25px;
+}
+.cart-button{
+  background-color: rgb(255, 216, 20);
+  border: none;
+  height: 27px;
+  width: 100px;
+  border-radius: 15px;
+  transition: background-color 0.15s, opacity 0.15s;
+}
+.cart-button:hover{
+  background-color: rgb(241, 203, 17);
+}
+.cart-button:active{
+  opacity: 0.5;
+}
+.buy-button{
+  background-color: rgb(255, 164, 28);
+  border: none;
+  height: 27px;
+  width: 100px;
+  border-radius: 15px;
+  transition: background-color 0.15s, opacity 0.15s;
+}
+.buy-button:hover{
+  background-color: rgb(245, 157, 27);
+}
+.buy-button:active{
+  opacity: 0.5;
+}
+.back-button{
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.next-button{
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.pages{
+  margin-left: 5px;
+  margin-right: 5px;
+}
